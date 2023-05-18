@@ -1,0 +1,5 @@
+To compile the project, use the following directives in bash: 
+
+flex file_name.l
+bison -dy file_name.y
+gcc lex.yy.c y.tab.c -o file_name
