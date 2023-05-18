@@ -29,7 +29,7 @@ program:
 expr: 
         ROMAN_NUM                   { $$ = $1; }
         | expr '+' expr             { $$ = $1 + $3; }
-        | expr '-' expr             { $$ = $1 + $3; }
+        | expr '-' expr             { $$ = $1 - $3; }
         | expr '*' expr             { $$ = $1 * $3; }
         | expr '/' expr             {
                                         if ($3 == 0){
